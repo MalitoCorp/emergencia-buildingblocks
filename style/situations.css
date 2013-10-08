@@ -1,0 +1,12 @@
+.paragraph{
+	font-size: 2em;
+	text-align: center;
+}
+
+.images{
+	text-align: center;
+}
+
+img{
+	border-radius: 20px;
+}
