@@ -29,21 +29,6 @@
   <link rel="stylesheet" href="../style/cross_browser.css">
 
   <style>
-    #index {
-      height: 100%;
-    }
-    [data-position="right"] {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      z-index: 15;
-      z-index: 100; /* -> drawer */
-    }
-    
     /* Headers */
     #headers section[role="region"] {
       margin-bottom: 1.5rem;
@@ -56,12 +41,6 @@
     }
     #headers section[role="region"] header h2 {
       margin: 0 0 1.5rem 0;
-    }
-
-    /* Lists */
-    /* to avoid double background effect on press */
-    [data-type=list] li>a:active { 
-      background-color: transparent;
     }
 
     /* Drawer */
@@ -85,23 +64,55 @@
         <h1>Situación</h1>
       </header>
 
-      <article class="content scrollable header" role="dialog" >
-        
+      <article class="content scrollable header" role="dialog" data-type="list">
+        <header>¿En qué situación se encuentra?</header>
+        <ul>
+          <li>
+            <a href="#">
+              <p>Quemadura</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Luxación</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Cortada</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Herida expuesta</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Convulsión</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Parálisis</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <p>Ataque</p>
+            </a>
+          </li>
+        </ul>
 
-
-        <!--br /><p class="paragraph">¿En qué situación se encuentra?</p><br /><br /-->
+        <!--br /><p class="paragraph">¿En qué situación se encuentra?</p><br /><br />
         <div class="images">
           <a href="#"><img src="../images/a.png" width="49%"></a>
           <a href="#"><img src="../images/b.png" width="49%"></a>
           <a href="#"><img src="../images/c.png" width="49%"></a>
           <a href="#"><img src="../images/d.png" width="49%"></a>
-        </div>
+        </div-->
       </article>
     </section>
-
-  <script type="text/javascript" defer src="../js/status.js"></script>
-  <script type="text/javascript" defer src="../js/seekbars.js"></script>
-  <script type="text/javascript" defer src="../js/app.js"></script>
 
 </body>
 </html>
