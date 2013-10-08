@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no" />
-  <title>Building blocks demo</title>
+  <title>AppTua - Emergency</title>
+
   <!-- Building blocks -->
   <link rel="stylesheet" href="../style/action_menu.css">
   <link rel="stylesheet" href="../style/confirm.css">
@@ -17,6 +18,12 @@
   <link rel="stylesheet" href="../style_unstable/scrolling.css">
   <link rel="stylesheet" href="../style_unstable/seekbars.css">
   <link rel="stylesheet" href="../style_unstable/tabs.css">
+
+  <!-- Transitions -->
+  <link rel="stylesheet" href="../style/transitions.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../style/fonts.css">
 
   <!-- Requeridos. -->
   <link rel="stylesheet" href="../style/buttons.css">
@@ -40,6 +47,8 @@
   <link rel="stylesheet" href="../style/cross_browser.css">
 
   <style type="text/css">
+
+    /* center elements */
     #unico{
       display: block;
       clear: both;
@@ -62,23 +71,43 @@
       height: 60%;
       margin: auto;
     }
-
+    /* center the title */
+    section[role="region"] > header:first-child h1 {
+      text-align: center;
+    }
+    /*
+    */
+    body, html {
+      font-family: 'FiraSans';
+    }
   </style>
 </head>
 <body>
 <section role="region">
   <header>
     <a href="main.html"><span class="icon icon-back">Back</span></a>
+    <h1 class="center">Emergencias</h1>
   </header>
 
     <section id="unico">
-      <div class="vertical-expand"><button></button></div>
-      <div class="vertical-expand"><a class="recommend" role="button" href="#"></a></div>
-      <div class="vertical-expand"><button class="danger"></button></div>
-      <div class="vertical-expand"><button class="danger" disabled="disabled"></button></div>
+      <div class="vertical-expand"><button class="default" id="bomberos"></button></div>
+      <div class="vertical-expand"><button class="default"></button></div>
+      <div class="vertical-expand"><button class="default"></button></div>
+      <div class="vertical-expand"><button class="default"></button></div>
     </section>
 
 </section>
+
+<!-- quo.js -->
+<script src="../js/quo.js"></script>
+<script type="text/javascript">
+  //When tap in "BOMBEROS"
+  $$('#bomberos').tap(function() {
+    // todo: realizar llamada a bomberos
+  });
+
+  // 
+</script>
 </body>
 </html>
 
