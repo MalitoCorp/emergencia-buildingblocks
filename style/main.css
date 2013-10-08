@@ -16,6 +16,7 @@ img.emg-button:empty
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	
 }
 
 .emg-calma
