@@ -1,0 +1,61 @@
+img.emg-button
+{
+	position: absolute;
+	max-width: 80%;
+	top: 10%;
+	left: 10%;
+	
+}
+
+img.emg-button:empty
+{
+	top: 45%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.emg-calma
+{
+	position:absolute; 
+	top:0; 
+	bottom:0; 
+	left:0; 
+	right:0;
+	margin:auto; 
+	height:240px; 
+	width:70%;
+}
+
+.emg-calma:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  .emg-calma {
+      max-width: 90%;
+  }
+
+  img.emg-button {
+      max-width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .emg-calma {
+      max-height: 90%;
+  }
+  img.emg-button {
+      max-height: 90%;
+  }
+}
