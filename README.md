@@ -7,13 +7,14 @@ Reusable components for Firefox OS
 Feel free to use them, although we are using the word 'unstable' :) 
 
 Asignaciones
-===============
-main.html (Alex)
-emergency.html (Hiram)
-call.html (-)
-wait.html (Rodo)
-more_info.html (Chiuhuas)
-situation.html (Carlos)
-uploasd_picture.html (Iddar)
-info.html (-)
-information (-)
+---------------------
+
+- main.html (Alex)
+- emergency.html (Hiram)
+- call.html (-)
+- wait.html (Rodo)
+- more_info.html (Chiuhuas)
+- situation.html (Carlos)
+- uploasd_picture.html (Iddar)
+- info.html (-)
+- information (-)
