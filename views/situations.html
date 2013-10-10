@@ -7,53 +7,10 @@
   <!-- Building blocks -->
   
   <link rel="stylesheet" href="../style/headers.css">
-  <link rel="stylesheet" href="../style_unstable/drawer.css">
-  <link rel="stylesheet" href="../style_unstable/lists.css">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="../style/icons/styles/action_icons.css">
-  <link rel="stylesheet" href="../style/icons/styles/media_icons.css">
-  <link rel="stylesheet" href="../style/icons/styles/comms_icons.css">
-  <link rel="stylesheet" href="../style/icons/styles/settings_icons.css">
-
-  <!-- Transitions -->
-  <link rel="stylesheet" href="../style/transitions.css">
-  
+  <link rel="stylesheet" href="../style_unstable/lists.css">  
   <!-- Util CSS: some extra tricks -->
   <link rel="stylesheet" href="../style/util.css">
   <link rel="stylesheet" href="../style/fonts.css">
-
-  <!-- Additional markup to make Building Blocks kind of cross browser -->
-  <link rel="stylesheet" href="../style/cross_browser.css">
-
-  <style>
-    /* Headers */
-    #headers section[role="region"] {
-      margin-bottom: 1.5rem;
-    }
-    #headers section[role="region"]:not(#drawer) {
-      display: inline;
-    }
-    #headers article header:first-child {
-      margin-top: 1.5rem;
-    }
-    #headers section[role="region"] header h2 {
-      margin: 0 0 1.5rem 0;
-    }
-
-    /* Drawer */
-    section[role="region"]:not(#drawer) {
-      transition: none;
-      left: 0;
-      z-index: 0;
-      padding-left: 0;
-    }
-    
-    /* Device rotation */
-    .landscape section[role="region"]#drawer > header:first-child {
-      /* Whatever needs to be changed on landscape */
-    }
-  </style>
 </head>
 <body>
     <section id="drawer" role="region">

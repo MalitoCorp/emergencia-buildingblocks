@@ -9,75 +9,12 @@
   <!-- Building blocks -->
   
   <link rel="stylesheet" href="../style/headers.css">
-  <link rel="stylesheet" href="../style_unstable/drawer.css">
-  <link rel="stylesheet" href="../style_unstable/lists.css">
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="../style/icons/styles/action_icons.css">
-  <link rel="stylesheet" href="../style/icons/styles/media_icons.css">
-  <link rel="stylesheet" href="../style/icons/styles/comms_icons.css">
-  <link rel="stylesheet" href="../style/icons/styles/settings_icons.css">
 
-  <!-- Transitions -->
-  <link rel="stylesheet" href="../style/transitions.css">
   
   <!-- Util CSS: some extra tricks -->
   <link rel="stylesheet" href="../style/util.css">
   <link rel="stylesheet" href="../style/fonts.css">
-
-  <!-- Additional markup to make Building Blocks kind of cross browser -->
-  <link rel="stylesheet" href="../style/cross_browser.css">
-
-
-  <style>
-    #index {
-      height: 100%;
-    }
-    [data-position="right"] {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      z-index: 15;
-      z-index: 100; /* -> drawer */
-    }
-    
-    /* Headers */
-    #headers section[role="region"] {
-      margin-bottom: 1.5rem;
-    }
-    #headers section[role="region"]:not(#drawer) {
-      display: inline;
-    }
-    #headers article header:first-child {
-      margin-top: 1.5rem;
-    }
-    #headers section[role="region"] header h2 {
-      margin: 0 0 1.5rem 0;
-    }
-
-    /* Lists */
-    /* to avoid double background effect on press */
-    [data-type=list] li>a:active {
-      background-color: transparent;
-    }
-
-    /* Drawer */
-    section[role="region"]:not(#drawer) {
-      transition: none;
-      left: 0;
-      z-index: 0;
-      padding-left: 0;
-    }
-    
-    /* Device rotation */
-    .landscape section[role="region"]#drawer > header:first-child {
-      /* Whatever needs to be changed on landscape */
-    }
-  </style>
 </head>
 <body>
     <section id="drawer" role="region">
@@ -85,12 +22,8 @@
         <a href="#" id="back"><span class="icon icon-back"></span></a>
         <h1>Situación</h1>
       </header>
-
       <article class="content scrollable header" role="dialog" >
-        
-
-
-        <!--br /><p class="paragraph">¿En qué situación se encuentra?</p><br /><br /-->
+            <!--br /><p class="paragraph">¿En qué situación se encuentra?</p><br /><br /-->
         <div class="images">
           <a href="#" id="bomberos"><img src="../images/bomberos.png" width="49%"></a>
           <a href="#"><img src="../images/cruzroja.png" width="49%"></a>
