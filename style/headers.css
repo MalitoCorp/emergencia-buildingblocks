@@ -337,6 +337,38 @@ section[role="region"].skin-organic header h2,
 }
 
 /* ----------------------------------
+ * HEADERS: flat
+ * ---------------------------------- */
+
+section[role="region"].skin-flat > header:first-child,
+.skin-flat section[role="region"] > header:first-child {
+  background-image: url(headers/images/ui/flat/header.png);
+  background-size: auto;
+}
+
+section[role="region"].skin-flat > header:first-child menu[type="toolbar"] a:last-child,
+.skin-flat section[role="region"] > header:first-child menu[type="toolbar"] a:last-child,
+section[role="region"].skin-flat > header:first-child menu[type="toolbar"] button:last-child,
+.skin-flat section[role="region"] > header:first-child menu[type="toolbar"] button:last-child {
+  background-image: url(headers/images/ui/flat/separator.png);
+}
+
+/* Navigation links (back, cancel, etc) */
+section[role="region"].skin-flat > header:first-child a:after,
+.skin-flat section[role="region"] > header:first-child a:after,
+section[role="region"].skin-flat > header:first-child button:after,
+.skin-flat section[role="region"] > header:first-child button:after {
+  background-image: url(headers/images/ui/flat/separator.png);
+}
+
+section[role="region"].skin-flat header h2,
+.skin-flat section[role="region"] header h2 {
+  background: #5c6a6d url(headers/images/ui/flat/subheader.png);
+  color: #fff;
+  border: none;
+}
+
+/* ----------------------------------
  * HEADERS: right-to-left tweaks
  * ---------------------------------- */
 
